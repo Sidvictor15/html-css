@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 10px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: dimgray;
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+        }
+        nav > a{
+            margin-right: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+       aside > p{
+            background-color: gray;
+        }
+        footer{
+           text-align: center;
+           background-color: black;
+           border: 5px;
+           padding: 5px;
+        }
+        footer>p{
+            color: white;
+            padding: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 10px;
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Futebol/Política/Esporte</p>
+        </section>
+            <section id="'noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ipsum, velit neque sint, nostrum molestias corrupti et officiis numquam enim porro accusamus deleniti. Id, expedita officia. Minus non maiores inventore!</p>
+                <aside>
+                    <p>Arquivo escrito por Sidney</p>
+                </aside>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
