@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="" method="get" autocomplete="on">
+        <div>
+            <label for="iano">Ano de Nascimento:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" 
+                   oninput="calcIdade()">
+        </div>
+
+        <div>
+            <label>Idade:</label>
+            <output id="iidade">0</output>
+        </div>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear(); // corrigido com ()
+            let anoNasc = Number(iano.value);
+            
+            // Valida se o ano digitado está dentro do intervalo permitido
+            if (anoNasc >= 1900 && anoNasc <= atual) {
+                iidade.innerHTML = atual - anoNasc;
+            } else {
+                iidade.innerHTML = 0;
+            }
+        }
+    </script>
+</body>
+</html>
